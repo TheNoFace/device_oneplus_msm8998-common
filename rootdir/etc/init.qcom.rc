@@ -328,9 +328,6 @@ on boot
     chown system system /sys/class/leds/vibrator/vmax_mv
     chmod 0660 /sys/class/leds/vibrator/vmax_mv
 
-    # init.qcom.sh
-    write /proc/sys/net/ipv6/conf/default/accept_ra_defrtr 1
-
 on charger
     start vendor.dashd
     start vendor.power_off_alarm
