@@ -5,7 +5,6 @@
 #
 
 $(call inherit-product, vendor/oneplus/msm8998-common/msm8998-common-vendor.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
 # APEX
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -178,6 +177,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
+
+# GMS
+ifeq ($(WITH_GMS),true)
+GMS_MAKEFILE=gms_minimal.mk
+endif
 
 # GPS / Location
 PRODUCT_PACKAGES += \
