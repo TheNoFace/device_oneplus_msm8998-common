@@ -32,12 +32,4 @@
             android:title="Vibration Strength" />
     </PreferenceCategory>
 
-    <PreferenceCategory
-        android:title="@string/button_settings_title">
-
-        <SwitchPreference
-            android:key="button_swap"
-            android:title="@string/button_swap_summary" />
-    </PreferenceCategory>
-
 </PreferenceScreen>
