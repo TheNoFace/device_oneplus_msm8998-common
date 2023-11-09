@@ -27,6 +27,10 @@ LOCAL_PACKAGE_NAME := DeviceSettings
 
 LOCAL_USE_AAPT2 := true
 
+LOCAL_OPTIONAL_USES_LIBRARIES := \
+    androidx.window.extensions \
+    androidx.window.sidecar
+
 LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/res \
     $(TOP)/packages/resources/devicesettings/res \
